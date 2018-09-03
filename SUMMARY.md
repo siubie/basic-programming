@@ -1,4 +1,21 @@
 # Summary
 
-* [Introduction](README.md)
-
+* [Basic Programming](README.md)
+* [0 - Syllabus](2018-2019/00.md)
+* [1 - Programming Language](2018-2019/01.md)
+* [2 - Case Study](2018-2019/02.md)
+* [3 - Syntaxes](2018-2019/03.md)
+* [4 - Quiz](2018-2019/04.md)
+* [5 - Conditional 1](2018-2019/05.md)
+* [6 - Conditional 2](2018-2019/06.md)
+* [7 - Mini Project](2018-2019/07.md)
+* [8 - Midterm Exam](2018-2019/08.md)
+* [9 - Looping 1](2018-2019/09.md)
+* [10 - Looping 2](2018-2019/10.md)
+* [11 - Array 1](2018-2019/11.md)
+* [12 - Array 2](2018-2019/12.md)
+* [13 - Quiz 2](2018-2019/13.md)
+* [14 - Function 1](2018-2019/14.md)
+* [15 - Function 2](2018-2019/15.md)
+* [16 - Final Project](2018-2019/16.md)
+* [17 - Final Project (Demo)](2018-2019/17.md)
