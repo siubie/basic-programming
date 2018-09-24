@@ -5,7 +5,7 @@
 * [1 - Programming Language](2018-2019/01.md)
 * [2 - Case Study](2018-2019/02.md)
 * [3 - Syntaxes](2018-2019/03.md)
-* [4 - Quiz](2018-2019/04.md)
+* [4 - Quiz 1](2018-2019/04.md)
 * [5 - Conditional 1](2018-2019/05.md)
 * [6 - Conditional 2](2018-2019/06.md)
 * [7 - Mini Project](2018-2019/07.md)
