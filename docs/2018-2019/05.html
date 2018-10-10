@@ -381,7 +381,437 @@
     
                                 <section class="normal markdown-section">
                                 
-                                
+                                <h1 id="jobsheet-5---conditional-syntax-1">Jobsheet 5 - Conditional Syntax 1</h1>
+<h3 id="operator">Operator</h3>
+<p>Operator is special symbols that used to operate data (operand). Kind of
+operator is <strong>Assignment Operator</strong>, <strong>Arithmatic Operator</strong>, <strong>Relational
+Operator</strong> and <strong>Logical Operator</strong>.</p>
+<h4 id="assignment-operator">Assignment Operator</h4>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>=</code></td>
+<td>Set value from right operand into left operand</td>
+<td><code>C = A</code> means set A&apos;s value into C</td>
+</tr>
+<tr>
+<td><code>+=</code></td>
+<td>Add left operand with right operand and set value into left operand</td>
+<td><code>C += A</code> equals <code>C = C + A</code></td>
+</tr>
+<tr>
+<td><code>-=</code></td>
+<td>Subtract left operand with right operand and set value into left operand</td>
+<td><code>C -= A</code> equals <code>C = C - A</code></td>
+</tr>
+<tr>
+<td><code>*=</code></td>
+<td>Multiply left operand with right operand and set value into left operand</td>
+<td><code>C *= A</code> equals <code>C = C * A</code></td>
+</tr>
+<tr>
+<td><code>/=</code></td>
+<td>Divide left operand with right operand and set value into left operand</td>
+<td><code>C /= A</code> equals <code>C = C / A</code></td>
+</tr>
+<tr>
+<td><code>%=</code></td>
+<td>Run modulo operation left operand with right operand and set value into left operand</td>
+<td><code>C %= A</code> equals <code>C = C % A</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="arithmatic-operator-binary-and-unary">Arithmatic Operator (Binary and Unary)</h4>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>+</code></td>
+<td>Plus operator</td>
+</tr>
+<tr>
+<td><code>-</code></td>
+<td>Subtract operator</td>
+</tr>
+<tr>
+<td><code>*</code></td>
+<td>Multiply operator</td>
+</tr>
+<tr>
+<td><code>/</code></td>
+<td>Divide operator</td>
+</tr>
+<tr>
+<td><code>%</code></td>
+<td>Modulo operator</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>++</code></td>
+<td>increase one value (increment)</td>
+</tr>
+<tr>
+<td><code>--</code></td>
+<td>decrease one value (decreement)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="relational-operator">Relational Operator</h4>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>==</code></td>
+<td>equals operator, return true if the condition is equals</td>
+</tr>
+<tr>
+<td><code>!=</code></td>
+<td>not equals operator</td>
+</tr>
+<tr>
+<td><code>&gt;</code></td>
+<td>greater than operator</td>
+</tr>
+<tr>
+<td><code>&lt;</code></td>
+<td>less than operator</td>
+</tr>
+<tr>
+<td><code>&gt;=</code></td>
+<td>greater than or equals operator</td>
+</tr>
+<tr>
+<td><code>&lt;=</code></td>
+<td>less than or equals operator</td>
+</tr>
+</tbody>
+</table>
+<h4 id="logical-operator">Logical Operator</h4>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&amp;&amp;</code></td>
+<td>And operator</td>
+</tr>
+<tr>
+<td><code>||</code></td>
+<td>Or operator</td>
+</tr>
+<tr>
+<td><code>!</code></td>
+<td>Not operator</td>
+</tr>
+</tbody>
+</table>
+<h3 id="basic-conditional-syntax">Basic Conditional Syntax</h3>
+<h4 id="if"><code>if</code></h4>
+<pre><code>if (condition) {
+  statement;
+  statement;
+}
+</code></pre><p><strong>Example</strong></p>
+<pre><code class="lang-java"><span class="hljs-keyword">import</span> java.util.Scanner;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">IfSyntax</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+    Scanner sc = <span class="hljs-keyword">new</span> Scanner(System.in);
+    System.out.print(<span class="hljs-string">&quot;Please input temperature: &quot;</span>);
+    <span class="hljs-keyword">int</span> temperature = sc.nextInt();
+
+    <span class="hljs-keyword">if</span> (temperature &lt; <span class="hljs-number">16</span>) {
+      System.out.println(<span class="hljs-string">&quot;Please wear your jacket!&quot;</span>);
+    }
+  }
+}
+</code></pre>
+<p><strong>Output</strong></p>
+<p><img src="images/05/output-if.png" alt="Output If"></p>
+<h4 id="if-else"><code>if-else</code></h4>
+<pre><code>if (condition) {
+  statement;
+  statement;
+} else {
+  statement;
+}
+</code></pre><p><strong>Example</strong></p>
+<pre><code class="lang-java"><span class="hljs-keyword">import</span> java.util.Scanner;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">IfElseSyntax</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String args[])</span> </span>{
+        Scanner sc = <span class="hljs-keyword">new</span> Scanner(System.in);
+        System.out.print(<span class="hljs-string">&quot;Please input temperature: &quot;</span>);
+        <span class="hljs-keyword">int</span> temperature = sc.nextInt();
+
+        <span class="hljs-keyword">if</span> (temperature &lt; <span class="hljs-number">16</span>) {
+            System.out.println(<span class="hljs-string">&quot;Please wear your jacket!&quot;</span>);
+        } <span class="hljs-keyword">else</span> {
+            System.out.println(<span class="hljs-string">&quot;Please wear your cap!&quot;</span>);
+        }
+    }
+}
+</code></pre>
+<p><strong>Output</strong></p>
+<p><img src="images/05/output-if-else.png" alt="Output If Else"></p>
+<h4 id="switch-case"><code>switch-case</code></h4>
+<pre><code>switch (condition) {
+  case constant-1:
+    statement;
+    break;
+  case constant-2:
+    statement-2;
+    break;
+  ...
+  ...
+  case constant-n:
+    statement-n;
+    break;
+  default:
+    statement;
+}
+</code></pre><p><strong>Example</strong></p>
+<pre><code class="lang-java"><span class="hljs-keyword">import</span> java.util.Scanner;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SwitchCaseSyntax</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String args[])</span> </span>{
+        Scanner sc = <span class="hljs-keyword">new</span> Scanner(System.in);
+        System.out.print(<span class="hljs-string">&quot;Input the number: &quot;</span>);
+        <span class="hljs-keyword">int</span> number = sc.nextInt();
+
+        <span class="hljs-keyword">switch</span> (number) {
+            <span class="hljs-keyword">case</span> <span class="hljs-number">1</span>:
+                System.out.println(<span class="hljs-string">&quot;It&apos;s Sunday&quot;</span>);
+                <span class="hljs-keyword">break</span>;
+            <span class="hljs-keyword">case</span> <span class="hljs-number">2</span>:
+                System.out.println(<span class="hljs-string">&quot;It&apos;s Monday&quot;</span>);
+                <span class="hljs-keyword">break</span>;
+            <span class="hljs-keyword">case</span> <span class="hljs-number">3</span>:
+                System.out.println(<span class="hljs-string">&quot;It&apos;s Tuesday&quot;</span>);
+                <span class="hljs-keyword">break</span>;
+            <span class="hljs-keyword">case</span> <span class="hljs-number">4</span>:
+                System.out.println(<span class="hljs-string">&quot;It&apos;s Wednesday&quot;</span>);
+                <span class="hljs-keyword">break</span>;
+            <span class="hljs-keyword">case</span> <span class="hljs-number">5</span>:
+                System.out.println(<span class="hljs-string">&quot;It&apos;s Thursday&quot;</span>);
+                <span class="hljs-keyword">break</span>;
+            <span class="hljs-keyword">case</span> <span class="hljs-number">6</span>:
+                System.out.println(<span class="hljs-string">&quot;It&apos;s Friday&quot;</span>);
+                <span class="hljs-keyword">break</span>;
+            <span class="hljs-keyword">case</span> <span class="hljs-number">7</span>:
+                System.out.println(<span class="hljs-string">&quot;It&apos;s Saturday&quot;</span>);
+                <span class="hljs-keyword">break</span>;
+            <span class="hljs-keyword">default</span>:
+                System.out.println(<span class="hljs-string">&quot;Your number is invalid!&quot;</span>);
+        }
+    }
+}
+</code></pre>
+<p><strong>Output</strong></p>
+<p><img src="images/05/output-switch-case.png" alt="Output Switch Case"></p>
+<h3 id="multiple-conditional-syntax">Multiple Conditional Syntax</h3>
+<h3 id="experiment">Experiment</h3>
+<h4 id="experiment-1">Experiment 1</h4>
+<ul>
+<li>Open your text editor (Sublime, Notepad++, VSCode or Atom)</li>
+<li>Create new file then give filename <code>Number.java</code></li>
+<li>Create class <code>Number</code></li>
+<li>Write <code>main()</code> function java</li>
+<li><p>Add external library <code>Scanner</code></p>
+<pre><code class="lang-java"><span class="hljs-keyword">import</span> java.util.Scanner;
+</code></pre>
+</li>
+<li><p>Declare variable with name <code>scanner</code> and datatype is <code>Scanner</code></p>
+<pre><code class="lang-java">Scanner scanner = <span class="hljs-keyword">new</span> Scanner(System.in);
+</code></pre>
+</li>
+<li><p>Create a variable with datatype integer, then give name <code>number</code>.</p>
+<pre><code class="lang-java"><span class="hljs-keyword">int</span> number;
+</code></pre>
+</li>
+<li><p>Then insert code below to receive input from user.</p>
+<pre><code class="lang-java">System.out.print(<span class="hljs-string">&quot;Please input the number: &quot;</span>);
+number = scanner.nextInt();
+</code></pre>
+</li>
+<li><p>Create conditional structure to check the number is even or odd. We can use
+the remaining values from modulus by 2.</p>
+<pre><code class="lang-java"><span class="hljs-keyword">if</span> (number % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>) {
+  System.out.println(<span class="hljs-string">&quot;Number &quot;</span> + number + <span class="hljs-string">&quot; is even.&quot;</span>);
+} <span class="hljs-keyword">else</span> {
+  System.out.println(<span class="hljs-string">&quot;Number &quot;</span> + number + <span class="hljs-string">&quot; is odd.&quot;</span>);
+}
+</code></pre>
+</li>
+<li>Compile the java file using <code>javac</code> command, then execute the program.</li>
+</ul>
+<h4 id="experiment-2">Experiment 2</h4>
+<ul>
+<li>Open text editor (sublime, VSCode, Notepad++ or Atom)</li>
+<li><p>See the picture below!</p>
+<p><img src="images/05/profit-loss-flowchart.png" alt="Profit Loss"></p>
+</li>
+<li><p>Create filename with name <code>ProfitOrLoss.java</code></p>
+</li>
+<li>Then create class with name <code>ProfitOrLoss</code></li>
+<li>Write basic structure <code>main()</code> function</li>
+<li>Add import library <code>Scanner</code><pre><code class="lang-java"><span class="hljs-keyword">import</span> java.util.Scanner;
+</code></pre>
+</li>
+<li>Declare variable <code>sc</code> with datatype <code>Scanner</code><pre><code class="lang-java">Scanner sc = <span class="hljs-keyword">new</span> Scanner(System.in);
+</code></pre>
+</li>
+<li><p>Create two variables with datatype <code>int</code> and a variable <code>String</code>.</p>
+<pre><code class="lang-java"><span class="hljs-keyword">int</span> purchasePrice;
+<span class="hljs-keyword">int</span> sellingPrice;
+String status;
+</code></pre>
+</li>
+<li><p>Insert code below to ask user input.</p>
+<pre><code class="lang-java">System.out.print(<span class="hljs-string">&quot;Please input the purchase price: &quot;</span>);
+purchasePrice = sc.nextInt();
+System.out.print(<span class="hljs-string">&quot;Please input the selling price: &quot;</span>);
+sellingPrice = sc.nextInt();
+</code></pre>
+</li>
+<li><p>Create basic structure conditional to check profit or loss.</p>
+<pre><code class="lang-java"><span class="hljs-keyword">if</span> (sellingPrice &gt; purchasePrice) {
+  status = <span class="hljs-string">&quot;Profit&quot;</span>;
+} <span class="hljs-keyword">else</span> {
+  status = <span class="hljs-string">&quot;Loss&quot;</span>;
+}
+</code></pre>
+</li>
+<li><p>Add code below to display the output of status</p>
+<pre><code class="lang-java">System.out.println(<span class="hljs-string">&quot;You&apos;re &quot;</span> + status);
+</code></pre>
+</li>
+<li><p>Compile using <code>javac</code> and then run the program!</p>
+</li>
+</ul>
+<h4 id="experiment-3">Experiment 3</h4>
+<ul>
+<li>Open text editor (Sublime, VSCode, Notepad++ or Atom)</li>
+<li>Create new filename <code>Calculator.java</code></li>
+<li>Create classname <code>Calculator</code></li>
+<li>Write basic <code>main()</code> function</li>
+<li>Add import library <code>Scanner</code><pre><code class="lang-java"><span class="hljs-keyword">import</span> java.util.Scanner;
+</code></pre>
+</li>
+<li>Declare <code>sc</code> as <code>Scanner</code></li>
+<li><p>Create three variables with data type double and a variable with data type
+char. Then give the names as <code>number1</code>, <code>number2</code>, <code>result</code> and <code>operator</code>.</p>
+<pre><code class="lang-java"><span class="hljs-keyword">double</span> number1, number2, number3;
+<span class="hljs-keyword">char</span> operator;
+</code></pre>
+</li>
+<li>Add code below to ask user input.<pre><code class="lang-java">System.out.print(<span class="hljs-string">&quot;Input first number: &quot;</span>);
+number1 = sc.nextDouble();
+System.out.print(<span class="hljs-string">&quot;Input second number: &quot;</span>);
+number2 = sc.nextDouble();
+System.out.print(<span class="hljs-string">&quot;Input operator (+ - * /): &quot;</span>);
+operator = sc.next().charAt(<span class="hljs-number">0</span>);
+</code></pre>
+</li>
+<li><p>Create <code>switch-case</code> to calculate operation.</p>
+<pre><code class="lang-java"><span class="hljs-keyword">switch</span> (operator) {
+  <span class="hljs-keyword">case</span> <span class="hljs-string">&apos;+&apos;</span>:
+    result = number1 + number2;
+    System.out.println(number1 + <span class="hljs-string">&quot; + &quot;</span> + number2 + <span class="hljs-string">&quot; = &quot;</span> + result);
+    <span class="hljs-keyword">break</span>;
+  <span class="hljs-keyword">case</span> <span class="hljs-string">&apos;-&apos;</span>:
+    result = number1 - number2;
+    System.out.println(number1 + <span class="hljs-string">&quot; - &quot;</span> + number2 + <span class="hljs-string">&quot; = &quot;</span> + result);
+    <span class="hljs-keyword">break</span>;
+  <span class="hljs-keyword">case</span> <span class="hljs-string">&apos;*&apos;</span>:
+    result = number1 * number2;
+    System.out.println(number1 + <span class="hljs-string">&quot; * &quot;</span> + number2 + <span class="hljs-string">&quot; = &quot;</span> + result);
+    <span class="hljs-keyword">break</span>;
+  <span class="hljs-keyword">case</span> <span class="hljs-string">&apos;/&apos;</span>:
+    result = number1 / number2;
+    System.out.println(number1 + <span class="hljs-string">&quot; / &quot;</span> + number2 + <span class="hljs-string">&quot; = &quot;</span> + result);
+    <span class="hljs-keyword">break</span>;
+  <span class="hljs-keyword">default</span>:
+    System.out.println(<span class="hljs-string">&quot;Wrong operator!&quot;</span>);
+}
+</code></pre>
+</li>
+<li>Compile and execute the program!</li>
+</ul>
+<h3 id="questions">Questions</h3>
+<ol>
+<li><p>Explain the purpose of keyword below!</p>
+<ul>
+<li><code>else</code></li>
+<li><code>break</code></li>
+<li><code>default</code></li>
+</ul>
+</li>
+<li><p>Explain the purpose of syntax below:</p>
+<ul>
+<li><code>operator = sc.next().charAt(0);</code></li>
+<li><code>if (number % 2 == 0)</code></li>
+</ul>
+</li>
+<li><p>In the experiment 3 add feature to calculate remaining value using modulus
+operator <code>%</code>!</p>
+</li>
+</ol>
+<h3 id="assignment">Assignment</h3>
+<ol>
+<li><p>Create the program that needs input two integer number, then display the max
+number into the screen!</p>
+</li>
+<li><p>Please see the picture of flowchart below!</p>
+<p><img src="images/05/ride-flowchart.png" alt="Ride Flowchart"></p>
+<p>Create the program based on the flowchart!</p>
+</li>
+<li><p>Financial officer calculate salary of employees every end of month. Total
+salary based on basic pay, meal allowance, and transportation allowance.</p>
+<p><code>Total salary = basic pay + meal allowance + transportation allowance</code></p>
+<p>If the total salary received is more than equal to IDR 1.500.000,00 then the
+salary is cut by tax 5%, while employees with total salary below IDR
+1.500.000,00 do not get tax.  Create the program to help financial officer
+calculate the total salary!</p>
+</li>
+<li><p>Create the program to determine placement class of student.
+If the grade of midterm exam more than 90 or the grade of final exam is
+equals 100, then the student go to class <strong>A</strong>, other than that go to class
+<strong>B</strong>. (<strong>Input</strong>: name of student, grade midterm exam and grade final
+exam!).</p>
+</li>
+</ol>
+
                                 
                                 </section>
                             
@@ -424,7 +854,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"5 - Conditional 1","level":"1.7","depth":1,"next":{"title":"6 - Conditional 2","level":"1.8","depth":1,"path":"2018-2019/06.md","ref":"2018-2019/06.md","articles":[]},"previous":{"title":"4 - Quiz 1","level":"1.6","depth":1,"path":"2018-2019/04.md","ref":"2018-2019/04.md","articles":[]},"dir":"neutral"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Basic Programming","gitbook":"*"},"file":{"path":"2018-2019/05.md","mtime":"2018-09-03T03:09:16.610Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-24T00:29:35.220Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"5 - Conditional 1","level":"1.7","depth":1,"next":{"title":"6 - Conditional 2","level":"1.8","depth":1,"path":"2018-2019/06.md","ref":"2018-2019/06.md","articles":[]},"previous":{"title":"4 - Quiz 1","level":"1.6","depth":1,"path":"2018-2019/04.md","ref":"2018-2019/04.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Basic Programming","gitbook":"*"},"file":{"path":"2018-2019/05.md","mtime":"2018-10-10T23:04:56.220Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-10T23:05:32.470Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
